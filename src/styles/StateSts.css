@@ -1,0 +1,134 @@
+.status{
+    width:900px;
+    height:400px;
+    background:rgb(128, 128, 128,0.1);
+    padding:10px;
+    border:2px solid cyan;
+}
+
+.status:hover{
+    box-shadow:0px 2px 2px 2px cyan;
+}
+
+.name{
+    color:black;
+    width:400px;
+    height:40px;
+    font-size:20px;
+    background:rgb(0, 255, 255);
+    font-family: fantasy;
+    text-align: center;
+    border-radius:10px;
+    margin:20px;
+    margin-left:30%;
+    padding-top:4px;
+}
+
+.name span{
+    color:red;
+}
+
+.conf{
+    color:rgb(17, 4, 5);
+    width:300px;
+    height:30px;
+    font-size:15px;
+    background:rgb(60, 155, 155);
+    font-family: fantasy;
+    text-align: center;
+    border-radius:10px;
+    margin:20px;
+    margin-left:34%;
+    padding-top:4px;
+}
+
+.title{
+    color:rgb(228, 13, 13);
+    width:200px;
+    height:30px;
+    font-size:15px;
+    background:rgb(0, 233, 250);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius:10px;
+    margin:10px;
+    margin-top:5px;
+    padding-top:4px;
+}
+
+.name1{
+    color:rgb(223, 39, 25);
+    width:150px;
+    height:50px;
+    font-size:30px;
+    background:rgb(34, 34, 33,0.4);
+    font-family: fantasy;
+    text-align: center;
+    margin:34px;
+    margin-top:5px;
+    padding-top:4px;
+    border-left:4px solid red;
+}
+
+.title2{
+    color:rgb(9, 3, 95);
+    width:200px;
+    height:30px;
+    font-size:15px;
+    background:rgb(158, 240, 91);
+    font-family: fantasy;
+    text-align: center;
+    border-radius:10px;
+    margin:10px;
+    margin-top:5px;
+    margin-left:20%;
+    padding-top:4px;
+}
+
+.name2{
+    color:rgb(73, 240, 58);
+    width:150px;
+    height:50px;
+    font-size:30px;
+    background:rgb(34, 34, 33,0.4);
+    font-family: fantasy;
+    text-align: center;
+    margin:34px;
+    margin-top:5px;
+    margin-left:23%;
+    padding-top:4px;
+    border-left:4px solid rgb(73, 240, 58);
+}
+
+@media (max-width:800px)
+{
+    .status{
+        width:400px;
+        height:400px;
+        background:rgb(128, 128, 128,0.1);
+        padding:10px;
+        border:2px solid cyan;
+        margin-left:2%;
+    }
+
+    .name{
+        width:300px;
+        margin-left:20%;
+    }
+
+    .conf{
+        margin-left:20%;
+    }
+
+    .name1{
+        font-size:20px;
+        width:200px;
+        margin-left:20px;
+    }
+
+    .name2{
+        font-size:20px;
+        margin-left:25%;
+    }
+}

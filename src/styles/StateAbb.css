@@ -1,0 +1,16 @@
+.list{
+    display:block;
+    width:250px;
+    background: transparent;
+}
+
+.stateName{
+    color:black;
+    font-size:20px;
+    width:250px;
+    height:50px;
+    background:rgb(85, 185, 18);
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:10px;
+}

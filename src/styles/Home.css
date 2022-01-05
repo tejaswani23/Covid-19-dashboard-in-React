@@ -1,0 +1,132 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background:black;
+}
+
+.header{
+    display:flex;
+    margin-left:30%;
+}
+
+.headerImg{
+    width:100px;
+    height:100px;
+}
+
+.headerTxt{
+    color:rgb(243, 240, 240);
+    font-size:100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.subHeader{
+    width:100%;
+    height:max-content;
+    background:violet;
+    text-align: center;
+}
+
+.subHead{
+    color:rgb(231, 22, 22);
+    font-size:40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+}
+
+.form{
+    display:flex !important;
+    margin-left:15%;
+}
+
+.field input{
+    width:200px;
+    height:50px;
+    color:cyan;
+    border: none;
+    font-size:20px;
+    border-bottom:2px solid cyan;
+    background:none;
+    outline: none;
+    margin:20px;
+    margin-left:30px;
+}
+
+.Switch{
+    width:240px;
+    height:36px;
+    background:violet;
+    border-radius:20px;
+    align-content: center;
+    text-align: center;
+}
+
+.flex{
+    display:flex;
+}
+
+.second{
+    margin-left:10%;
+}
+
+
+.buttons button{
+    width:240px;
+    height:36px;
+    background:violet;
+    border-radius:20px;
+    align-content: center;
+    text-align: center;
+    margin-left:50px;
+    font-size:15px;
+}
+
+.flex1{
+    display:flex;
+}
+
+@media (max-width:800px)
+{
+    .header{
+        display:flex;
+        margin-left:10%;
+        width:400px;
+    }
+    
+    .headerImg{
+        width:100px;
+        height:80px;
+    }
+    
+    .headerTxt{
+        font-size:80px;
+    }
+    
+    .subHeader{
+        width:100%;
+        height:max-content;
+        background:violet;
+        text-align: center;
+        margin-left:30%;
+    }
+    
+    .flex1{
+        display:block;
+    }
+    
+    .buttons button{
+        margin-left:10px;
+    }
+
+    .form{
+        display:block !important;
+        margin-left:15%;
+    }
+
+    .abbr{
+        margin:10px;
+    }
+}
