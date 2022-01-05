@@ -8,10 +8,9 @@ function App() {
   const [district,setDistrict] = useState("");
   return (
     <div>
-    Hy
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home setState={setState} setDistrict={setDistrict}/>}/>
+        <Route exact path="/" element={<Home st={state} district={district} setState={setState} setDistrict={setDistrict}/>}/>
         <Route path="/district" element={<District state={state} district={district}/>}/>
       </Routes>
     </Router>

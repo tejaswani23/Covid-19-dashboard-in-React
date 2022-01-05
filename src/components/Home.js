@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { makeStyles } from '@material-ui/core/styles';
 import axios from "axios";
 import { NavLink } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
+import Button from './Button';
 import Switch from '@material-ui/core/Switch';
 import Paper from '@material-ui/core/Paper';
 import Slide from '@material-ui/core/Slide';
@@ -37,10 +37,12 @@ const useStyles = makeStyles((theme) => ({
 
   
 
-const Home = ({setState,setDistrict}) => {
+const Home = ({st,district,setState,setDistrict}) => {
     const classes = useStyles();
     const [checked, setChecked] = useState(false);
     const [state,setStates] = useState({});
+    const [bool1,setBool]= useState(false);
+    const [bool2,setBool2]= useState(false);
 
     const handleChange = () => {
       setChecked((prev) => !prev);
@@ -66,9 +68,9 @@ const Home = ({setState,setDistrict}) => {
             <div className="subHead">Indian States DashBoard</div>
         </div>
         <div className="form ">
-           <div className="field"><input placeholder="Enter your State Abb." type="text"  onChange={(e)=>setState(e.target.value)}/></div>
-           <div className="field"><input placeholder="Enter your District" type="text"  onChange={(e)=>setDistrict(e.target.value)}/></div>
-           <div className="field"><NavLink to="/district"> <Button variant="contained" color="primary" style={{margin:"25px"}}>View </Button></NavLink></div>
+           <div className="field"><input placeholder="Enter your State Abb." type="text"  onChange={(e)=>{setBool(true);setState(e.target.value)}}/></div>
+           <div className="field"><input placeholder="Enter your District" type="text"  onChange={(e)=>{setBool2(true);setDistrict(e.target.value)}}/></div>
+           <div className="field"><NavLink to="/district"> <Button state={st} district={district} bool1={bool1} bool2={bool2}/></NavLink></div>
         </div>
         <div className="flex1">
         <div className="abbr">
