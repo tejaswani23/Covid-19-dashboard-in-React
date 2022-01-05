@@ -86,8 +86,8 @@ const Home = ({st,district,setState,setDistrict}) => {
         </div>
         <div className="second">
         <div className="buttons flex">
-            <div> <button>View State Info</button></div>
-            <div> <button>View All Districts Info</button></div>
+            <div> <NavLink to="/state"><button>View State Info</button></NavLink></div>
+            <div> <NavLink to="/alldistricts"><button>View All Districts Info</button></NavLink></div>
         </div>
         <div className="states">
         {

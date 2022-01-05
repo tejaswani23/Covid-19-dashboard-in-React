@@ -33,6 +33,7 @@
     left:60%;
     transform:translate(-50%,-50%);
     width:400px;
+    text-align:center
 }
 
 .a1{
@@ -42,6 +43,14 @@
     height:40px;
     border-left:10px solid red;
     margin:20px;
+}
+.a{
+    display:flex;
+    background:rgba(172, 172, 175, 0.4);
+    width:100%;
+    height:40px;
+    margin:20px;
+    text-align:center;
 }
 
 .val{
@@ -95,8 +104,51 @@
     color:rgb(49, 230, 49);
 }
 
+.head{
+    color:rgb(243, 240, 240);
+    font-size:40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.head input{
+    width:200px;
+    height:50px;
+    color:cyan;
+    border: none;
+    font-size:20px;
+    border-bottom:2px solid cyan;
+    background:none;
+    outline: none;
+    margin-top:20px;
+    margin-left:30px;
+}
+
+.head button{
+    width:150px;
+    text-align:center;
+    background:rgb(17, 147, 199);
+    font-size:20px;
+    border-radius:4px;
+    margin:20px;
+    margin-top:30px;
+    margin-left:30px;
+}
+
+.diss{
+    width:100%;
+    background: transparent;
+    margin-left:30%;
+}
 @media (max-width:800px)
 {
+    .diss{
+      margin-left:0%;
+    }
+
     .bg img{
         width:50px;
         height:100px;
@@ -147,5 +199,19 @@
     .subHeader{
         font-size:30px;
         transform:translateX(-30%);
+    }
+
+    .head{
+        background:rgba(172, 172, 175, 0.4);
+        width:300px;
+        height:200px;
+        font-size:20px;
+        text-align: center;
+        padding-top:20px;
+        top:30%;
+    }
+
+    .head input{
+        color:cyan;
     }
 }

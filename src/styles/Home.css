@@ -142,4 +142,24 @@ body{
     .abbr{
         margin:10px;
     }
+
+    .buttons button{
+        width:150px;
+        height:30px;
+        margin-left:10px;
+        transform:translateX(-30%);
+    }
+
+    .field input{
+        width:200px;
+        height:20px;
+        color:cyan;
+        border: none;
+        font-size:20px;
+        border-bottom:2px solid cyan;
+        background:none;
+        outline: none;
+        margin:20px;
+        margin-left:30px;
+    }
 }
